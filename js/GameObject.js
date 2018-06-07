@@ -33,3 +33,7 @@ GameObject.prototype.unregister = function () {
     r.splice(r.indexOf(this), 1);
   }
 }
+
+GameObject.prototype.destroy = function () {
+  this.sprite.destroy();
+}

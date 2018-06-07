@@ -151,6 +151,7 @@ Game.prototype.start = function () {
 Game.prototype.clearBalls = function () {
   for (var o of this.ballRegister.slice()) {
     o.unregister();
+    o.destroy();
   }
 };
 
